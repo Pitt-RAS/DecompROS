@@ -3,7 +3,15 @@
 
 #include <decomp_ros_msgs/Ellipsoids.h>
 #include <decomp_util/data_type.h>
+
+// BAD HEADER
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+#pragma GCC diagnostic ignored "-Wignored-attributes"
+#pragma GCC diagnostic ignored "-Wmisleading-indentation"
 #include <Eigen/Eigenvalues>
+#pragma GCC diagnostic pop
+// END BAD HEADER
 
 #include <OGRE/OgreVector3.h>
 #include <OGRE/OgreSceneNode.h>
